@@ -1,0 +1,83 @@
+.parallax-container {
+      height: 400px;
+    }
+    .side-link
+    {
+      background-color: #F3F1EE
+    }
+.news-feeds-read-more{
+  line-height:24px;
+}
+          .title{
+            color:#3b5998 !important;font-size:30px !important;font-weight:498 !important;
+          }
+          a{
+          
+     
+          }
+          .quick-links-background
+          {
+            background-color:#F3F1EE;
+          }
+          @media screen and (min-width:100px ) and (max-width: 992px)
+          {
+                  .motorsportsteams-wrapper
+                     {
+                      margin-left: 10px;
+                      margin-right: 10px
+                    }
+          }
+          @media screen and (min-width:992px )
+          {
+                  .motorsportsteams-wrapper
+                     {
+                      margin-left: 20px
+                    }
+          }
+      .quick-links-padding-bottom
+      {
+            margin-bottom: -19px;
+          }
+      /*card layout changed fot admissions section */
+      .card .card-content {
+  padding: 12px;
+  border-radius: 0 0 2px 2px;
+}
+.card .card-content
+       {
+          padding: 20px;
+        border-radius: 0 0 2px 2px;
+      }
+      .card .card-image {
+  opacity: .9;
+      }
+      .card .card-title {
+  font-size: 15px;
+}
+.card .card-content .card-title {
+  line-height: 18px;
+}
+/* collapsible */
+.collapsible-header
+{
+  background-color: #3B5998;
+  color: white;
+}
+/*events quick links*/
+.events-date-bottom-padding
+{
+    line-height: 3 !important;
+  font-size: 13px;
+}
+/*social-image-size*/
+.social-image
+{
+}
+img.responsive-img, video.responsive-video {
+  max-width: 94%;
+  height: auto;
+}
+/*social image row position absolute*/
+.social-row {
+  margin-top: -6.5%;
+}

@@ -1,0 +1,414 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+body
+  {
+    color:black;
+    overflow-x: hidden;
+    overflow-y: visible;
+    color:#4c4c4c;
+
+  }
+
+  /* a tag color */
+  a{
+            color:#3b5998;
+            
+          }
+  .myblack
+  {
+    color:black;
+  }
+  .vitblue
+  {
+    color:#3B5998;
+  }
+  .mywhite
+  {
+    color:white !im;
+  }
+ .logo {
+    border: 0;
+  height: 100%;
+  padding: 10px;
+}
+
+.side-link-fixed
+    {
+      background-color: #F3F1EE
+    }
+  
+
+
+ .brand-logo {
+  background-color: #3B5998;
+  height: 100%;
+  padding: 1px;
+  z-index: 99;
+}
+.nav-top-fixed
+{
+    position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: #3B5998;
+}
+.shift-events
+{
+  position: absolute;
+  margin-left: 79%;
+}
+
+@media only screen and (min-width: 601px)
+{
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+   height: 92px;
+  line-height: 51px;
+}
+}
+
+.navrow {
+  margin-left: 188px;
+}
+.nav-top-padding
+{
+  margin-top: 20px
+}
+nav ul a {
+  
+  color: white;
+  font-size: 1.1em;
+  padding: 3px 34px;
+  font-weight: 500;
+    padding: 0px 18px;
+}
+@media screen and (min-width:100px ) and (max-width: 992px)
+{
+  nav .nav-wrapper {
+  
+  background-color: #3B5998;
+}
+.nav-top-padding
+{
+  margin-top: 0px
+}
+}
+ 
+ .mdi-navigation-menu:before {
+  content: "\e8a1";
+  padding: 18px;
+}
+@media only screen and (min-width: 601px) and (max-width: 992px)
+{
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  height: 105px;
+  line-height: 95px;
+}
+}
+@media only screen and (min-width: 992px) and (max-width: 1139px)
+{
+  nav ul a {
+  
+  padding: 0px 6px;
+}
+
+.navrow {
+    margin-left: 184px;
+}
+
+}
+@media only screen and (min-width: 1140px) and (max-width: 1345px)
+{
+  nav ul a {
+  
+  padding: 0px 13px;
+
+}
+
+}
+
+.searchbar
+{
+  
+  background-color: rgba(255,255,255,0.12) !important;
+  
+ 
+  border-radius: 1px;
+ 
+  height: 2.6rem !important;
+  width: 10% !important;
+  
+  margin: 0 0 15px 0;
+ 
+  right: 10px;
+  top: 5px;
+  position: absolute;
+  padding-left: 10px !important;
+  padding-right: 50px !important;
+  border-bottom :none !important;
+ 
+}
+
+
+
+
+
+.row {
+
+  margin-bottom: 0;
+}
+.black
+{
+  color:black;
+}
+.nav-top-bottom {
+  position: relative;
+  top: -24px;
+  font-size: 13px;
+}
+nav ul li {
+  
+    height: 49px
+}
+.nav-bottom-text-size
+{
+  font-weight: 400;
+  color:#D6DCD7;
+}
+
+
+
+
+.slider {
+ 
+  height: 560px;
+    margin-top: 6%;
+  
+  
+}
+.slider .slides {
+  height :100%;
+}
+.slider .indicators {
+  
+  z-index: 99;
+    bottom: 6%;
+}
+.slider .indicators .indicator-item.active {
+  background-color: #3B5998;
+}
+
+.events
+{}
+.newsinfocustxt {
+  font-size: 38px;
+  font-weight: 500;
+   padding-left: 41px;
+}
+.infocustxt {
+  font-size: 38px;
+  font-weight: 500;
+    padding-left: 41px;
+}
+.discovervittxt {
+  font-size: 46px;
+  font-weight: 900;
+  margin-left: 41px;
+  color:white;
+  padding-top: 50px;
+}
+.discover-inside-text {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 4vh;
+   
+}
+.discover-video-image {
+  height: 314px;
+  margin-top: 87px;
+  width: 342px;
+  border-radius: 4px;
+}
+
+
+
+
+.heigh
+{
+margin-left: 32px;
+  margin-right: 32px;
+}
+.heigh2 {
+  margin-left: 32px;
+  margin-right: -27px;
+}
+.infocus-card
+{
+  margin: 0.5rem 56px 3rem 0;
+}
+.card .card-content .card-title {
+  line-height: 0px;
+}
+.card .card-content {
+  padding: 10px;
+  border-radius: 0 0 2px 2px;
+}
+.card {
+
+  background-color: transparent;
+ 
+}
+
+.news-image
+   {
+  height: 202px;
+   }
+
+
+.discover-border {
+  margin: 19px;
+  border-right: 1px solid #7182a6;
+    margin-left: 48px;
+}
+.discover-image {
+  margin-top: 31px;
+  
+  margin-right: 51px;
+}
+
+.nav-sidebar-text
+{
+  color:black;
+  font-size: 24px;
+}
+
+
+
+.events-sidenav-height
+{
+    height: 39px !important;
+  line-height: 31px !important;
+}
+.events-sidenav-a
+{
+    height: 0px !important;
+}
+
+
+/* overlay */
+.overlay {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  opacity: .16;
+}
+
+
+/* card alignment */
+.card-left-align
+{
+  padding: 0 0 !important;
+}
+/*card padding bottom*/
+.card .card-image{
+  margin-bottom: -6px;
+}
+/*card title z-index*/
+.card .card-image .card-title {
+  
+  z-index: 3;
+}
+
+/*google MAP */
+.googlemap
+{
+  width:100%;height:70%;
+}
+
+/*extra lineheight*/
+.extratext-lineheight {
+  line-height: 20px;
+}
+
+
+/* collection 'a' color */
+.collection a.collection-item {
+  color:#4c4c4c;
+} 
+
+/*collection head and background*/
+.collection.with-header .collection-header {
+
+  background-color: #3B5998;
+  color: white;
+}
+.collection-head-font{
+font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+ 
+}
+
+
+/* collapsible */
+
+.collapsible-header
+{
+  background-color: #3B5998;
+  color: white;
+}
+
+/*use this for card box shadow none*/
+.card-boxshadow-none
+{
+  box-shadow: none;
+}
+
+/*quick links padding bottom */
+
+ .quick-links-padding-bottom{
+          
+            font-size:16px;
+            font-weight:480;
+            line-height: 50px
+          }
+/*margin top main pages */
+.page-top
+{
+     margin-top: 88px;
+}
+
+
+/*preloader css */
+
+.preloader {
+    position:absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     margin:-50px 0 0 -50px;
+    
+    z-index: 998;
+}
+.preloader-content
+{
+  width: 100%;
+  height: 1000px;
+  background: white;
+
+}
+
+/*facebook styling */
+

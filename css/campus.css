@@ -1,0 +1,68 @@
+
+    .side-link
+    {
+      background-color: #F3F1EE
+    }
+    .card-title{
+           font-size:20px !important;
+          }
+          .title{
+            color:#3b5998 !important;font-size:30px !important;font-weight:498 !important;
+          }
+          a{
+            color:#3B5998
+          }
+          .quick-links-background
+          {
+            background-color:#F3F1EE;
+          }
+          @media screen and (min-width:100px ) and (max-width: 992px)
+          {
+                  .campus-wrapper
+                     {
+                      margin-left: 10px;
+                      margin-right: 10px
+                    }
+          }
+          @media screen and (min-width:992px )
+          {
+                  .campus-wrapper
+                     {
+                      margin-left: 20px
+                    }
+          }
+          .card .card-content .card-title 
+          {
+        line-height: 35px ;
+      }
+      .card .card-content
+       {
+          padding: 20px;
+        border-radius: 0 0 2px 2px;
+      }
+      .quick-links-padding-bottom
+      {
+            margin-bottom: -19px;
+          
+            font-size:16px;
+            font-weight:480;
+            line-height: 50px
+          }
+      /*card layout changed fot admissions section */
+      .card .card-content {
+  padding: 12px;
+  border-radius: 0 0 2px 2px;
+}
+
+
+/*Overlay opacity */
+.overlay
+{
+  opacity: 0.4;
+}
+/* events text padding bottom*/
+.events-padding-bottom
+{
+
+
+}

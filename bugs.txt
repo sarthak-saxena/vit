@@ -1,0 +1,1 @@
+1) Events link needs to be initialized from the home page. It doesn't work from the inner pages
