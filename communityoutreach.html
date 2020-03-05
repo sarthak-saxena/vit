@@ -1,0 +1,409 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<title>VIT University</title>
+<!-- CSS  -->
+<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+
+
+<!--MAPS API-->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(12.9692, 79.1559),
+    zoom:14,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var map2=new google.maps.Map(document.getElementById("googleMap2"),mapProp);
+
+  map.set('styles', [
+  {
+    
+    featureType: 'landscape',
+    elementType: 'geometry',
+    stylers: [
+      { hue: 'green' },
+      { gamma: 1.4 },
+      { saturation: 82 },
+      { lightness: 96 }
+    ]
+  }
+]);
+  map2.set('styles', [
+  {
+    
+    featureType: 'landscape',
+    elementType: 'geometry',
+    stylers: [
+      { hue: 'green' },
+      { gamma: 1.4 },
+      { saturation: 82 },
+      { lightness: 96 }
+    ]
+  }
+]);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+
+
+<style>
+   .parallax-container {
+      height: 400px;
+    }
+    .side-link
+    {
+      background-color: #F3F1EE
+    }
+.news-feeds-read-more{
+  line-height:24px;
+}
+          .title{
+            color:#3b5998 !important;font-size:30px !important;font-weight:498 !important;
+          }
+          a{
+            color:#3b5998;
+            font-size:16px;
+            font-weight:480;
+            line-height: 50px
+          }
+          .quick-links-background
+          {
+            background-color:#F3F1EE;
+          }
+          @media screen and (min-width:100px ) and (max-width: 992px)
+          {
+                  .projectsandprogrammes-wrapper
+                     {
+                      margin-left: 10px;
+                      margin-right: 10px
+                    }
+          }
+          @media screen and (min-width:992px )
+          {
+                  .projectsandprogrammes-wrapper
+                     {
+                      margin-left: 20px
+                    }
+          }
+      .quick-links-padding-bottom
+      {
+            margin-bottom: -19px;
+          }
+      /*card layout changed fot admissions section */
+      .card .card-content {
+  padding: 12px;
+  border-radius: 0 0 2px 2px;
+}
+.card .card-content
+       {
+          padding: 20px;
+        border-radius: 0 0 2px 2px;
+      }
+      .card .card-image {
+  opacity: .9;
+      }
+      .card .card-title {
+  font-size: 15px;
+}
+.card .card-content .card-title {
+  line-height: 18px;
+}
+/* collapsible */
+.collapsible-header
+{
+  background-color: #3B5998;
+  color: white;
+}
+</style>
+</head>
+<body style="margin-top:6%">
+<!--nav bar-->
+<nav class="nav-top-fixed" role="navigation">
+<div class="nav-wrapper">
+  <a href="#" class="brand-logo"><img class="logo" src="images/logo.png"></a>
+  <div>
+    <ul class="hide-on-med-and-down right bottom">
+      <li><input type="text" class="searchbar" width="10px"></li>
+    </ul>
+    <ul class="hide-on-med-and-down right center">
+      <!-- Sidebar Trigger -->
+      <a href="#"><i class="mdi-action-search" style="height:30px"></i></a>
+    </ul>
+    <ul class="hide-on-med-and-down right center shift-events">
+      <!-- Sidebar Trigger -->
+      <a href="#" data-activates="nav-sidebar" class="button-events"><i class="mdi-av-playlist-add"></i></a>
+    </ul>
+  </div>
+  <div class="row navrow">
+    <div class="row">
+      <div class="col l10 nav-top-padding">
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">ACADEMICS</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">RESEARCH</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">ADMISSIONS</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">PLACEMENTS</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">CAMPUS LIFE</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row nav-top-bottom" style="color:black">
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Alumni</a></li>
+      </ul>
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Parents</a></li>
+      </ul>
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Faculty/Staff</a></li>
+      </ul>
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Students</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--navbar mobile-->
+  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+  <ul id="nav-mobile" class="side-nav white">
+    <li><a href="#">Navbar Link</a></li>
+  </ul>
+  <!--sidebar events-->
+  <ul id="nav-sidebar" class="side-nav white right">
+    <div class="row">
+      <div class="col s12 nav-sidebar-text">
+         Events
+      </div>
+      <!--event-->
+      <div class="col s12">
+        <div class="row vitblue">
+           Fire in M block
+        </div>
+        <div class="row myblack" style="line-height: 1;">
+           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+        </div>
+        <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitblue events-sidenav-height"></i></a>
+      </div>
+      <!--End event-->
+      <!--event-->
+      <div class="col s12">
+        <div class="row vitblue">
+           Fire in M block
+        </div>
+        <div class="row myblack" style="line-height: 1;">
+           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+        </div>
+        <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitblue events-sidenav-height"></i></a>
+      </div>
+      <!--End event-->
+      <!--event-->
+      <div class="col s12">
+        <div class="row vitblue">
+           Fire in M block
+        </div>
+        <div class="row myblack" style="line-height: 1;">
+           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+        </div>
+        <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitblue events-sidenav-height"></i></a>
+      </div>
+      <!--End event-->
+    </div>
+  </ul>
+</div>
+</nav>
+<!--End nav bar-->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="images/aboutvit/tt.jpg">
+  </div>
+</div>
+<div class="row">
+  <div class="col l9">
+    <div class="row projectsandprogrammes-wrapper">
+      <h3 class="vitblue">Community Outreach (CSRD & RS )</h3>
+      <p>
+         A thirst for serving the rural needs and challenges saw its birth on Dec 1st 2005, as the Centre for Sustainable Rural Development and Research Studies (CSRD&RS), with the visionary support of our Chancellor Dr.G.VISWANATHAN. It was inaugurated by His Excellency Dr.A.P.J.Abdul Kalam, President of India on 1st December, 2005 to provide better and effective services for the growth and development of rural needy through its various activities. It sees through the sustainable development and working among the socially-economically deprived and marginalized communities including children, youth, women, farmers in the community. It provides for better and effective services for the growth and development of rural needy through its various activities and projects. <br>
+        <br>
+         The aim of CSRD & RS is to improve the quality of the life of the rural folks by meeting their basic needs of the present without compromising the ability of the future generations through participative planning and implementation. <br>
+        <br>
+         Mission: Promoting sustainable rural development through participative planning, capacity building , effective networking, Research and innovative efforts. <br>
+        <br>
+         "Go to the People. Live among them. Learn from them. Serve them. Plan with them. Start with what they know. Build on what they have. And when the best leaders leave, the people will say, "We have done it ourselves." -Lao Tsu
+      </p>
+    </div>
+    <div class="row projectsandprogrammes-wrapper">
+      <br>
+      <h4 class="vitblue">Where We Work</h4>
+        <div class="col l6 m12 s12">
+          <div class="card">
+            <div id="googleMap" class="googlemap"></div>
+            <div class="card-content"><span>Vellore District</span></div>
+
+          </div>
+        </div>
+        <div class="col l6 m12 s12">
+          <div class="card">
+            <div id="googleMap2" class="googlemap"></div>
+            <div class="card-content"><span>Thiruvanamalai District</span></div>
+          </div>
+        </div>
+        
+    </div>
+
+    <div class="row projectsandprogrammes-wrapper">
+      <br>
+      <h4 class="vitblue">Our Partners</h4>
+      <ul>
+        <li><i  class="mdi-image-navigate-next"></i>  District Planning Commission  </li>
+        <li><i  class="mdi-image-navigate-next"></i>  Entrepreneurship Development Institute (EDI), Govt. of Tamil Nadu</li>
+        <li><i  class="mdi-image-navigate-next"></i>  Indian Bank Self Employment Training Institute (INDSETI)</li>
+        <li><i  class="mdi-image-navigate-next"></i>  MSME – Development Institute (MSME-DI), Ministry of MSME, Govt. of India </li>
+        <div class="row"><li><i  class="mdi-image-navigate-next"></i>  NABARD</li>
+        <div class="row"><li><i  class="mdi-image-navigate-next"></i>  National Institute of Micro Small Medium Enterprises (ni-msme), Ministry of MSME, Govt. of India </li>
+        <li><i  class="mdi-image-navigate-next"></i>  Puthu Vazhvu Project </li>
+        <li><i  class="mdi-image-navigate-next"></i>  State Planning Commission </li>
+        <li><i  class="mdi-image-navigate-next"></i>    Tamilnadu State Rural Livelihood Mission </li>
+        <li><i  class="mdi-image-navigate-next"></i>  Tamilnadu Women Development Corporation</li>
+      </ul>
+        
+        
+    </div>
+  </div>
+  <div class="col l3 s12 side-link">
+    <div class="col l12 offset-l1">
+      <div class="row">
+        <div class="row">
+          <h4 class=" myblack">Quick Links</h4>
+        </div>
+        <div class="row quick-links-padding-bottom">
+          <a href="#">Projects & Program</a>
+        </div>
+        <div class="row quick-links-padding-bottom">
+          <a href="#">Star Scheme</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="row">
+          <h4 class=" myblack">Contact Us</h4>
+        </div>
+        <div class="row quick-links-padding-bottom">
+          <div class="col l10 s10">
+             S. Tamil Maran,<br>
+             Project Officer,<br>
+             Centre for Sustainable Rural Development and Research Studies (CSRD&RS),<br>
+             VIT University, Vellore – 632014<br>
+             Mobile: 9442104210 Phone: 0416-2202444 / 2156<br>
+             Email: stamilmaran@vit.ac.in / projectofficer@vit.ac.in<br>
+            <a href="www.vit.ac.in">Website: www.vit.ac.in</a>
+          </div>
+        </div>
+        <br>
+      </div>
+      <div class="row">
+        <h4 class=" myblack">News Feeds</h4>
+      </div>
+      <div class="col l9 s12 ">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/news/1.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Team VIMAANAS makes a new plane <i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              <a href="#" class="news-feeds-read-more">Read more</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+            <p>
+               Here is some more information about this product that is only revealed once clicked on.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col l9 s12">
+        <div class="card ">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/news/2.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Chetan Bhagat comes to vit and talks about his book<i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              <a href="#" class="news-feeds-read-more">Read more</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+            <p>
+               Here is some more information about this product that is only revealed once clicked on.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col l9 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/news/3.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">VIT Riviera at its best<i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              <a href="#" class="news-feeds-read-more">Read more</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+            <p>
+               Here is some more information about this product that is only revealed once clicked on.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col l9 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/news/4.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">VIT Riviera at its best <i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              <a href="#" class="news-feeds-read-more">Read more</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+            <p>
+               Here is some more information about this product that is only revealed once clicked on.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script type="text/javascript">
+       $(document).ready(function(){
+      $('.parallax').parallax();
+    });</script>
+</body>
+</html>

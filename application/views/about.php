@@ -1,13 +1,13 @@
 <!-- about.html -->
 <div ng-controller="aboutController" data-ng-init="init()">
 
-	<div class="page-top">
+	<div class="aboutvit">
       
 	  <div class="parallax-container">
 	    <div class="parallax"><img src="images/aboutvit/tt.jpg"></div>
 	  </div>
 	        
-	  <div class="row ">
+	  <div class="row">
 	    <div class="col l9">
 
 	      <div class="row">
@@ -114,7 +114,7 @@
 	        <div class="col l12">
 	          <div class="row overview">
 	            <div>
-	              <h4 class="vitblue">New Standards &amp; Accreditation</h4>
+	              <h4 class="vitblue">New Standards & Accreditation</h4>
 	              <p>
 	                It has been the constant aim of VIT University to incorporate features of excellence in its campus. Every effort is made to improve the existing best practices in these fields. The Management and staff at VIT take great care to ensure that the Institute serves as an exemplary role model for other educational institutions across the country. VIT has not only accommodated these features of excellence, but it has also added value to them by matching them with the expectations of the resident student community and the staff. VIT's position of excellence among educational institutions in India is primarily because of these unique features. 
 	              </p>
@@ -155,13 +155,13 @@
 	    </div>
 
 	    <div class="row quick-links-padding-bottom">
-	      <a href="/vit/about/leadership" class="side-link vitblue">Leadership</a>
+	      <a href="#" class="side-link vitblue">Leadership</a>
 	    </div>
 	    <div class="row quick-links-padding-bottom">
 	      <a href="#" class="side-link vitblue">Administrative Office</a>
 	    </div>
 	    <div class="row quick-links-padding-bottom">
-	      <a href="/vit/about/community" class="side-link vitblue">Community Outreach</a>
+	      <a href="#" class="side-link vitblue">Community Outreach</a>
 	    </div>
 	    <div class="row quick-links-padding-bottom">
 	      <a href="#" class="side-link vitblue">Infrastructure</a>
@@ -170,7 +170,7 @@
 	      <a href="#" class="side-link vitblue">VIT News</a>
 	    </div>
 	    <div class="row quick-links-padding-bottom">
-	      <a href="/vit/about/career" class="side-link vitblue">Career</a>
+	      <a href="#" class="side-link vitblue">Career</a>
 	    </div>
 	    <br>
 	  </div>
@@ -267,8 +267,6 @@
 	  </div>
 
 
-	</div>
-
 </div>
 
-</div>
+ </div>

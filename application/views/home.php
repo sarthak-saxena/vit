@@ -1,6 +1,6 @@
 <!-- home.html -->
 <div ng-controller="mainController" data-ng-init="init()">
-     
+
     <!-- Content -->
   <div class="content">
 
@@ -15,41 +15,41 @@
     </div>
 
     <div class="slider">
-    <ul class="slides">
-      <li>
-      <img src="images/slider4.jpg">
-      <!-- random image -->
-      <div class="caption center-align">
-        <h3>This is our big Tagline!</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-      </li>
-      <li>
-      <img src="images/slider3.jpg">
-      <!-- random image -->
-      <div class="caption left-align">
-        <h3>Left Aligned Caption</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-      </li>
-      <li>
-      <img src="images/slider2.jpg">
-      <!-- random image -->
-      <div class="caption right-align">
-        <h3>Right Aligned Caption</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-      </li>
-      <li>
-      <img src="images/slider1.jpg">
-      <!-- random image -->
-      <div class="caption center-align">
-        <h3>This is our big Tagline!</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-      </li>
-    </ul>
-  </div>
+      <ul class="slides">
+        <li>
+        <img src="/vit/images/slider4.jpg">
+        <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+        </li>
+        <li>
+        <img src="/vit/images/slider3.jpg">
+        <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+        </li>
+        <li>
+        <img src="/vit/images/slider2.jpg">
+        <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+        </li>
+        <li>
+        <img src="/vit/images/slider1.jpg">
+        <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+        </li>
+      </ul>
+    </div>
     <!---slider end  -->
 
     <!--News section-->
@@ -292,7 +292,40 @@
 
           <div class="row social-feeds">
 
-            <div class="fb-page" data-href="https://www.facebook.com/vituniversity" data-width="100%" data-height="700" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/vituniversity"><a href="https://www.facebook.com/vituniversity">VIT University</a></blockquote></div></div>
+            <div class="col s12">
+              <div class="row vitgrey">
+                Fire in M block
+              </div>
+              <div class="row vitgrey" style="line-height: 1;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+              </div>
+
+              <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitgrey events-sidenav-height"></i></a>
+            </div>
+            <!--End event-->
+
+            <!--event-->
+            <div class="col s12">
+              <div class="row vitgrey">
+                Fire in M block
+              </div>
+              <div class="row vitgrey" style="line-height: 1;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+              </div>
+              
+              <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitgrey events-sidenav-height"></i></a>
+            </div>
+
+            <div class="col s12">
+              <div class="row vitgrey">
+                Fire in M block
+              </div>
+              <div class="row vitgrey" style="line-height: 1;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+              </div>
+              
+              <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitgrey events-sidenav-height"></i></a>
+            </div>
             
           </div>
 

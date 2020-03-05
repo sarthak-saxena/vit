@@ -19,7 +19,7 @@
 	{
 	.overview
 	{
-		  margin-left: 10px;
+		  margin-left: 20px;
  		 
 	}
 	.side-link-fixed
@@ -27,8 +27,9 @@
 			background-color: #F3F1EE
 		}
 	}
-
-	 
+	 .parallax-container {
+      height: 400px;
+    }
     .side-link {
  
   font-size: 16px;

@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<title>VIT University</title>
+<!-- CSS  -->
+<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<style>
+  body
+  {
+    color:black;
+    overflow-x: hidden;
+    overflow-y: visible;
+    color:#4c4c4c
+  }
+  .myblack
+  {
+    color:black;
+  }
+  .vitblue
+  {
+    color:#3B5998;
+  }
+  .vitgrey
+  {
+    color:#D6DCCD;
+  }
+  .content
+  {
+     margin-top: 6%;
+  }
+ .logo {
+    border: 0;
+  height: 100%;
+  padding: 10px;
+}
+ .brand-logo {
+  background-color: #3B5998;
+  height: 100%;
+  padding: 1px;
+  z-index: 99;
+}
+.nav-top-fixed
+{
+    position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: #3B5998;
+}
+.shift-events
+{
+  position: absolute;
+  margin-left: 79%;
+}
+@media only screen and (min-width: 601px)
+{
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+   height: 92px;
+  line-height: 51px;
+}
+}
+.navrow {
+  margin-left: 188px;
+}
+.nav-top-padding
+{
+  margin-top: 20px
+}
+nav ul a {
+  color: white;
+  font-size: 1.1em;
+  padding: 3px 34px;
+  font-weight: 500;
+    padding: 0px 18px;
+}
+@media screen and (min-width:100px ) and (max-width: 992px)
+{
+  nav .nav-wrapper {
+  background-color: #3B5998;
+}
+.nav-top-padding
+{
+  margin-top: 0px
+}
+}
+ .mdi-navigation-menu:before {
+  content: "\e8a1";
+  padding: 18px;
+}
+@media only screen and (min-width: 601px) and (max-width: 992px)
+{
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  height: 105px;
+  line-height: 95px;
+}
+}
+@media only screen and (min-width: 992px) and (max-width: 1139px)
+{
+  nav ul a {
+  padding: 0px 6px;
+}
+.navrow {
+    margin-left: 184px;
+}
+}
+@media only screen and (min-width: 1140px) and (max-width: 1345px)
+{
+  nav ul a {
+  padding: 0px 13px;
+}
+}
+.searchbar
+{
+  background-color: rgba(255,255,255,0.12) !important;
+  border-radius: 1px;
+  height: 2.6rem !important;
+  width: 10% !important;
+  margin: 0 0 15px 0;
+  right: 10px;
+  top: 5px;
+  position: absolute;
+  padding-left: 10px !important;
+  padding-right: 50px !important;
+  border-bottom :none !important;
+}
+.row {
+  margin-bottom: 0;
+}
+.black
+{
+  color:black;
+}
+.nav-top-bottom {
+  position: relative;
+  top: -24px;
+  font-size: 13px;
+}
+nav ul li {
+    height: 49px
+}
+.nav-bottom-text-size
+{
+  font-weight: 400;
+  color:#D6DCD7;
+}
+.slider {
+  height: 560px;
+}
+.slider .slides {
+  height :100%;
+}
+.slider .indicators {
+  z-index: 99;
+    bottom: 6%;
+}
+.slider .indicators .indicator-item.active {
+  background-color: #3B5998;
+}
+.events
+{}
+.events-date-bottom-padding
+{
+    line-height: 3 !important;
+  font-size: 13px;
+}
+
+.newsinfocustxt {
+  font-size: 38px;
+  font-weight: 500;
+   padding-left: 41px;
+}
+.infocustxt {
+  font-size: 38px;
+  font-weight: 500;
+    padding-left: 41px;
+}
+.discovervittxt {
+  font-size: 46px;
+  font-weight: 900;
+  margin-left: 41px;
+  color:white;
+  padding-top: 50px;
+}
+.discover-inside-text {
+  color: white;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 4vh;
+}
+.discover-video-image {
+  height: 314px;
+  margin-top: 87px;
+  width: 342px;
+  border-radius: 4px;
+}
+.heigh
+{
+margin-left: 32px;
+  margin-right: 32px;
+}
+.heigh2 {
+  margin-left: 32px;
+  margin-right: -27px;
+}
+.infocus-card
+{
+  margin: 0.5rem 56px 3rem 0;
+}
+.card .card-content .card-title {
+  line-height: 0px;
+  font-size: 19px
+}
+.card .card-content {
+  padding: 10px;
+  border-radius: 0 0 2px 2px;
+}
+.card {
+  background-color: transparent;
+}
+.card .card-image img {
+  opacity: .85;
+}
+.card .card-content {
+  height: 91px;
+}
+.discover-border {
+  margin: 19px;
+  border-right: 1px solid #7182a6;
+    margin-left: 48px;
+    margin-top: 0px;
+}
+.discovervideo-side-border
+{
+  border-right: 1px solid #7182a6;
+}
+.discover-image {
+  margin-top: 31px;
+  margin-right: 51px;
+}
+.nav-sidebar-text
+{
+  color:black;
+  font-size: 24px;
+}
+.events-sidenav-height
+{
+    height: 39px !important;
+  line-height: 31px !important;
+}
+.events-sidenav-a
+{
+    height: 0px !important;
+}
+
+.allnews {
+  font-size: 15px;
+  font-weight: 400;
+  color: #3B5998;
+}
+.social-feeds
+{
+  margin-top: 4%;
+  margin-right: 46px;
+}
+
+/*footer */
+.footer-lighten-text
+{
+  font-weight: 300;
+}
+
+/*image overlay */
+.image-overlay
+{
+
+}
+
+/* dropdown*/
+.dropdown-content
+{
+  overflow: hidden;
+    min-width: 210px;
+}
+.dropdown-content li > a, .dropdown-content li > span {
+ 
+  color: #3B5998;
+  font-weight: 400;
+  
+}
+
+.discover-vit-video-text{
+  color:white;
+}
+
+
+.overlay1 {
+  position: absolute;
+  
+  background-color: black;
+  height: 7%;
+  right: 0;
+  z-index: 777;
+  top: 32%;
+  opacity: 0.6;
+  color:white;
+    padding: 11px;
+      font-weight: 300;
+}
+.overlay2 {
+  position: absolute;
+  ;
+  background-color: black;
+  height: 7%;
+  right: 0;
+  z-index: 777;
+  top: 42%;
+  opacity: 0.6;
+  color:white;
+    padding: 11px;
+      font-weight: 300;
+}
+.overlay3 {
+  position: absolute;
+  
+  background-color: black;
+  height: 7%;
+  right: 0;
+  z-index: 777;
+  top: 52%;
+  opacity: 0.6;
+  color:white;
+    padding: 11px;
+      font-weight: 300;
+}
+
+/*footer*/
+footer.page-footer {
+margin-top: 0px;
+}
+
+
+</style>
+</head>
+<body>
+<!--nav bar-->
+<nav class="nav-top-fixed" role="navigation">
+<div class="nav-wrapper">
+  <a href="#" class="brand-logo"><img class="logo" src="images/logo-large.png"></a>
+  <div>
+    <ul class="hide-on-med-and-down right bottom">
+      <li><input type="text" class="searchbar" width="10px"></li>
+    </ul>
+    <ul class="hide-on-med-and-down right center">
+      <!-- Sidebar Trigger -->
+      <a href="#"><i class="mdi-action-search" style="height:30px"></i></a>
+    </ul>
+    <ul class="hide-on-med-and-down right center shift-events">
+      <!-- Sidebar Trigger -->
+      <a href="#" data-activates="nav-sidebar" class="button-events"><i class="mdi-av-playlist-add"></i></a>
+    </ul>
+  </div>
+  <div class="row navrow">
+    <div class="row">
+      <div class="col l10 nav-top-padding">
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="about.hmtl" class='dropdown-button' data-activates='dropdownabout'>ABOUT</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="academics.html" class='dropdown-button' data-activates='dropdownacademics'>ACADEMICS</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="research.html" class='dropdown-button' data-activates='dropdownresearch'>RESEARCH</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="admissions.html" class='dropdown-button' data-activates='dropdownadmissions'>ADMISSIONS</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="placements.html" class='dropdown-button' data-activates='dropdownplacements'>PLACEMENTS</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="campus.html" class='dropdown-button' data-activates='dropdowncampuslife'>CAMPUS LIFE</a></li>
+
+
+
+
+
+ <ul id='dropdownabout' class='dropdown-content'>
+    <li><a href="#!">Administrative offices</a></li>
+     <li class="divider"></li>
+    <li><a href="#!">Leadership</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Administrative Offices</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Timeline</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Infrastructure</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Careers</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Community outreach</a></li>
+  </ul>
+   <ul id='dropdownacademics' class='dropdown-content'>
+    <li><a href="#!">FFCS</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Schools</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Library</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Conference Facilities</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Computing Centers</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Smart Classrooms</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">International Relations</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">COE</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Honours and Awards</a></li>
+  </ul>
+  
+   <ul id='dropdownadmissions' class='dropdown-content'>
+    <li><a href="#!">Undergraduate</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Postgraduate</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Research</a></li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+        </ul>
+      </div>
+    </div>
+    <div class="row nav-top-bottom" style="color:black">
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Alumni</a></li>
+      </ul>
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Parents</a></li>
+      </ul>
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Faculty/Staff</a></li>
+      </ul>
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Students</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--navbar mobile-->
+  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+  <ul id="nav-mobile" class="side-nav white">
+    <li><a href="#">Navbar Link</a></li>
+  </ul>
+  <!--sidebar events-->
+  <ul id="nav-sidebar" class="side-nav white right">
+    <div class="row">
+      <div class="col s12 nav-sidebar-text">
+        Events
+      </div>
+      <!--event-->
+      <div class="col s12">
+        <div class="row vitblue">
+          Fire in M block
+        </div>
+
+        <div class="row myblack" style="line-height: 1;">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+        </div>
+        <div class="row vitgrey events-date-bottom-padding" style="line-height: 1;">
+    12-JUN-2015
+  </div>
+        <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitblue events-sidenav-height"></i></a>
+      </div>
+      <!--End event-->
+      <!--event-->
+      <div class="col s12">
+        <div class="row vitblue">
+          Fire in M block
+        </div>
+        <div class="row myblack" style="line-height: 1;">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+        </div>
+        <div class="row vitgrey events-date-bottom-padding" style="line-height: 1;">
+    12-JUN-2015
+  </div>
+        <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitblue events-sidenav-height"></i></a>
+      </div>
+      <!--End event-->
+      <!--event-->
+      <div class="col s12">
+        <div class="row vitblue">
+          Fire in M block
+        </div>
+        <div class="row myblack" style="line-height: 1;">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+        </div>
+        <div class="row vitgrey events-date-bottom-padding" style="line-height: 1;">
+    12-JUN-2015
+  </div>
+        <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitblue events-sidenav-height"></i></a>
+      </div>
+      <!--End event-->
+    </div>
+  </ul>
+</div>
+</nav>
+<!--End nav bar-->
+<!--Bottom content-->
+<div class="content">
+  <!--slider-->
+  <div class="overlay1">
+    Undergraduate Admissions
+  </div>
+  <div class="overlay2">
+    Postgraduate Admissions
+  </div>
+  <div class="overlay3">
+    Research Admissions
+  </div>
+
+  <div class="slider">
+    <ul class="slides">
+      <li>
+      <img src="images/slider4.jpg">
+      <!-- random image -->
+      <div class="caption center-align">
+        <h3>This is our big Tagline!</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+      </li>
+      <li>
+      <img src="images/slider3.jpg">
+      <!-- random image -->
+      <div class="caption left-align">
+        <h3>Left Aligned Caption</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+      </li>
+      <li>
+      <img src="images/slider2.jpg">
+      <!-- random image -->
+      <div class="caption right-align">
+        <h3>Right Aligned Caption</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+      </li>
+      <li>
+      <img src="images/slider1.jpg">
+      <!-- random image -->
+      <div class="caption center-align">
+        <h3>This is our big Tagline!</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+      </li>
+    </ul>
+  </div>
+  <!---slider end  -->
+  <!--new in focus section-->
+  <div class="section">
+    <div class="newsinfocus">
+      <div class="row infocustxt">
+         News<a href="#"><sub class="allnews">All News</sub></a>
+      </div>
+      <div class="row heigh">
+        <div class="col l3 s12">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/news/1.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Team VIMAANAS makes a new plane <i class="mdi-navigation-more-vert right"></i></span>
+              <p>
+                <a href="#">Read more</a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+              <p>
+                Here is some more information about this product that is only revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col l3 s12">
+          <div class="card ">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/news/2.jpeg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Chetan Bhagat comes to vit and talks about his book<i class="mdi-navigation-more-vert right"></i></span>
+              <p>
+                <a href="#">Read more</a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+              <p>
+                Here is some more information about this product that is only revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col l3 s12">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/news/3.jpeg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">VIT Riviera at its best<i class="mdi-navigation-more-vert right"></i></span>
+              <p>
+                <a href="#">Read more</a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+              <p>
+                Here is some more information about this product that is only revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col l3 s12">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="images/news/4.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">VIT Riviera at its best <i class="mdi-navigation-more-vert right"></i></span>
+              <p>
+                <a href="#">Read more</a>
+              </p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+              <p>
+                Here is some more information about this product that is only revealed once clicked on.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!---infocus section-->
+<div class="section">
+<div class="newsinfocus">
+  <div class="row newsinfocustxt">
+     Infocus
+  </div>
+  <div class="row heigh2">
+    <div class="col l4 s12">
+      <div class="card infocus-card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/infocus/1.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">VIT Student achieves 1st award in nano-tech research<i class="mdi-navigation-more-vert right"></i></span>
+          <p>
+            <a href="#">This is a link</a>
+          </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+          <p>
+            Here is some more information about this product that is only revealed once clicked on.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col l4 s12">
+      <div class="card infocus-card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/infocus/2.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">A new record added to Guiness <i class="mdi-navigation-more-vert right"></i></span>
+          <p>
+            <a href="#">This is a link</a>
+          </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+          <p>
+            Here is some more information about this product that is only revealed once clicked on.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col l4 s12">
+      <div class="card infocus-card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/infocus/3.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">VIT Unplugged team received achievers award for rewamping vit.ac.in  <i class="mdi-navigation-more-vert right"></i></span>
+          <p>
+            <a href="#">This is a link</a>
+          </p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+          <p>
+            Here is some more information about this product that is only revealed once clicked on.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!----End newsinfocus section-->
+<!--Discover VIT-->
+<div class="discovervit" style="background:#3B5998">
+<div class="row discovervittxt">
+ DISCOVER VIT
+</div>
+<div class="row margindiscover">
+<div class="col l4 s12">
+<!--picture gallery-->
+<div class="row discover-border">
+<div class="discover-inside-text">
+   Picture <br>
+  <strong>Gallery</strong>
+</div>
+<div class="row">
+  <div class="card discover-image">
+    <div class="card-image">
+      <img src="images/discover/1.jpg">
+      <span class="card-title">Card Title</span>
+    </div>
+  </div>
+  <div style="color:white" class="materialboxed">
+    Open Gallery <i class="mdi-image-photo-camera"></i>
+  </div>
+</div>
+</div>
+<!--vit history-->
+<div class="row discover-border">
+<div class="discover-inside-text">
+  3D <br>
+  <strong>Campus Tour</strong>
+</div>
+<div class="row">
+  <div class="card discover-image">
+    <div class="card-image">
+      <img src="images/discover/2.jpg">
+      <span class="card-title">Card Title</span>
+    </div>
+  </div>
+  <div style="color:white">
+    Take the tour <i class="mdi-image-photo-camera"></i>
+  </div>
+</div>
+</div>
+</div>
+<!--video update-->
+<div class="col l4 s12">
+<div class="row discovervideo-side-border">
+<div class="discover-inside-text">
+  Video <br>
+  <strong>Updates</strong>
+</div>
+<div>
+  <div class="image-overlay">
+  </div>
+  <img class="discover-video-image responsive-img" src="images/play.png">
+</div>
+<p class="discover-vit-video-text">
+  VIT University is a progressive educational institution that is dedicated to the pursuit of excellence. Students here are encouraged on this journey by our committed faculty, world-class facilities and student-friendly educational systems. 
+</p>
+</div>
+</div>
+<!--Social network feeds-->
+<div class="col l4 s12">
+<div class="discover-inside-text">
+Social Network<br>
+<strong>feeds</strong>
+</div>
+<div class="row social-feeds">
+<div class="col s12">
+  <div class="row vitgrey">
+    Fire in M block
+  </div>
+  <div class="row vitgrey" style="line-height: 1;">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+  </div>
+
+  <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitgrey events-sidenav-height"></i></a>
+</div>
+<!--End event-->
+<!--event-->
+<div class="col s12">
+  <div class="row vitgrey">
+    Fire in M block
+  </div>
+  <div class="row vitgrey" style="line-height: 1;">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+  </div>
+  
+  <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitgrey events-sidenav-height"></i></a>
+</div>
+<div class="col s12">
+  <div class="row vitgrey">
+    Fire in M block
+  </div>
+  <div class="row vitgrey" style="line-height: 1;">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+  </div>
+  
+  <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitgrey events-sidenav-height"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--End Discover VIT-->
+
+
+<!--footer-->
+<footer class="page-footer" style="background:#283B66">
+<div class="row">
+  <div class="col l10 offset-l1">
+  <div class="row">
+    <div class="col l4">
+      <h5 class="white-text">CONNECT WITH US</h5>
+    </div>
+    <div class="col l16">
+    </div>
+  </div>
+<div class="row">
+<div class="col l3 s12">
+<h5 class="white-text">Parents</h5>
+<ul>
+<li><a class="white-text footer-lighten-text" href="#!">Guest House</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">Hotels in vellore</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">Parent Login</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">Programmes Offered</a></li>
+</ul>
+</div>
+<div class="col l3 s12">
+<h5 class="white-text">VITians</h5>
+<ul>
+<li><a class="white-text footer-lighten-text" href="#!">VIT Intranet </a></li>
+<li><a class="white-text footer-lighten-text" href="#!">VIT Webmail</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">VIT Gmail</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">Student Login</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">People Orbit</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">Industrial Visit(Format and Guidelines)</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">Alumni</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">Lab / Facilities</a></li>
+</ul>
+</div>
+<div class="col l3 s12">
+<h5 class="white-text">Visitors</h5>
+<ul>
+<li><a class="white-text footer-lighten-text" href="#!">To apply for Transcripts</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">To apply for Medium of Instruction Certificate / Migration Certificate</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">Careers@VIT</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">IQAC</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">Women Cell</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">IPR Cell</a></li>
+<li><a class="white-text footer-lighten-text" href="#!">Past Events</a></li>
+<li><a class="white-text footer-lighten-text" href="#">Vellore Campus Map</a></li>
+
+</ul>
+</div>
+<div class="col l3 s12">
+<h5 class="white-text">Contact Us</h5>
+<ul>
+<li class="white-text footer-lighten-text"><i class="mdi-image-landscape  white-text"></i> Vellore Institute of Technology
+
+Near Katpadi Rd
+
+Vellore, Tamil Nadu - 632014</li><br>
+<li class="white-text footer-lighten-text">
+<i class="mdi-communication-phone white-text"></i> +91 416 2243091/93</li><br>
+<li class="white-text footer-lighten-text"><i class="mdi-communication-email white-text"></i> info@vit.ac.in</li>
+
+
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+<div class="footer-copyright">
+<div class="row">
+
+ <div class="col l12 offset-l1">Copyright&copy; <a class="grey-text text-lighten-3" href="">VIT University</a></div>
+</div>
+</div>
+</footer>
+
+<!--End footr-->
+<!--  Scripts-->
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script type=""> 
+  $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+   
+  // Initialize collapse button
+    $('.button-events').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
+ $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+ $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+       // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      // Displays dropdown below the button
+    }
+  );
+        
+  </script>
+</body>
+</html>

@@ -1,0 +1,845 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<title>VIT University</title>
+<!-- CSS  -->
+<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<!--MAPS API-->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(12.9692, 79.1559),
+    zoom:14,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var map2=new google.maps.Map(document.getElementById("googleMap2"),mapProp);
+  map.set('styles', [
+  {
+    featureType: 'landscape',
+    elementType: 'geometry',
+    stylers: [
+      { hue: 'green' },
+      { gamma: 1.4 },
+      { saturation: 82 },
+      { lightness: 96 }
+    ]
+  }
+]);
+  map2.set('styles', [
+  {
+    featureType: 'landscape',
+    elementType: 'geometry',
+    stylers: [
+      { hue: 'green' },
+      { gamma: 1.4 },
+      { saturation: 82 },
+      { lightness: 96 }
+    ]
+  }
+]);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<style>
+    .side-link
+    {
+      background-color: #F3F1EE
+    }
+.news-feeds-read-more{
+  line-height:24px;
+}
+          .title{
+            color:#3b5998 !important;font-size:30px !important;font-weight:498 !important;
+          }
+          a{
+            color:#3b5998;
+            font-size:16px;
+            font-weight:480;
+          }
+          .quick-links-background
+          {
+            background-color:#F3F1EE;
+          }
+          @media screen and (min-width:100px ) and (max-width: 992px)
+          {
+                  .projectsandprogrammes-wrapper
+                     {
+                      margin-left: 10px;
+                      margin-right: 10px
+                    }
+          }
+          @media screen and (min-width:992px )
+          {
+                  .projectsandprogrammes-wrapper
+                     {
+                      margin-left: 20px
+                    }
+          }
+      .quick-links-padding-bottom
+      {
+            margin-bottom: -19px;
+          }
+      /*card layout changed fot admissions section */
+       .card .card-image {
+  opacity: .9;
+      }
+      .card .card-title {
+  font-size: 15px;
+}
+.card .card-content .card-title {
+  line-height: 18px;
+}
+/* collapsible */
+.collapsible-header
+{
+  background-color: #3B5998;
+  color: white;
+}
+.extra-lineheight
+{
+      line-height: 24px;
+}
+</style>
+</head>
+<body style="margin-top:6%">
+<!--nav bar-->
+<nav class="nav-top-fixed" role="navigation">
+<div class="nav-wrapper">
+  <a href="#" class="brand-logo"><img class="logo" src="images/logo.png"></a>
+  <div>
+    <ul class="hide-on-med-and-down right bottom">
+      <li><input type="text" class="searchbar" width="10px"></li>
+    </ul>
+    <ul class="hide-on-med-and-down right center">
+      <!-- Sidebar Trigger -->
+      <a href="#"><i class="mdi-action-search" style="height:30px"></i></a>
+    </ul>
+    <ul class="hide-on-med-and-down right center shift-events">
+      <!-- Sidebar Trigger -->
+      <a href="#" data-activates="nav-sidebar" class="button-events"><i class="mdi-av-playlist-add"></i></a>
+    </ul>
+  </div>
+  <div class="row navrow">
+    <div class="row">
+      <div class="col l10 nav-top-padding">
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">ACADEMICS</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">RESEARCH</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">ADMISSIONS</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">PLACEMENTS</a></li>
+        </ul>
+        <ul class="hide-on-med-and-down center ">
+          <li><a href="#">CAMPUS LIFE</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row nav-top-bottom" style="color:black">
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Alumni</a></li>
+      </ul>
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Parents</a></li>
+      </ul>
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Faculty/Staff</a></li>
+      </ul>
+      <ul class="hide-on-med-and-down right ">
+        <li><a href="#" class="nav-bottom-text-size">Students</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--navbar mobile-->
+  <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+  <ul id="nav-mobile" class="side-nav white">
+    <li><a href="#">Navbar Link</a></li>
+  </ul>
+  <!--sidebar events-->
+  <ul id="nav-sidebar" class="side-nav white right">
+    <div class="row">
+      <div class="col s12 nav-sidebar-text">
+         Events
+      </div>
+      <!--event-->
+      <div class="col s12">
+        <div class="row vitblue">
+           Fire in M block
+        </div>
+        <div class="row myblack" style="line-height: 1;">
+           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+        </div>
+        <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitblue events-sidenav-height"></i></a>
+      </div>
+      <!--End event-->
+      <!--event-->
+      <div class="col s12">
+        <div class="row vitblue">
+           Fire in M block
+        </div>
+        <div class="row myblack" style="line-height: 1;">
+           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+        </div>
+        <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitblue events-sidenav-height"></i></a>
+      </div>
+      <!--End event-->
+      <!--event-->
+      <div class="col s12">
+        <div class="row vitblue">
+           Fire in M block
+        </div>
+        <div class="row myblack" style="line-height: 1;">
+           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+        </div>
+        <a href="#" class="events-sidenav-a"><i class="mdi-content-add-circle-outline right vitblue events-sidenav-height"></i></a>
+      </div>
+      <!--End event-->
+    </div>
+  </ul>
+</div>
+</nav>
+<!--End nav bar-->
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="images/aboutvit/tt.jpg">
+  </div>
+</div>
+<div class="row">
+  <div class="col l9">
+    <div class="row projectsandprogrammes-wrapper">
+      <h3 class="vitblue">Community Radio | Programmes</h3>
+       VIT CR runs both on-air and off-air programs. The off-air programs focus on community development initiatives through workshops, school competitions and awareness programs. The one-air programs are organized into 3 phases. Phase I produce programmes with VIT Teamspeak, a club from VIT CR, other Clubs & Chapters. Phase II produce programmes with Schools & Colleges around Vellore. Phase III produce programmes with community people. The idea behind this working model is to produce programmes of different quality and content. Phase I programmes are produced by VIT students for themselves. Phase II programmes are produced by other school and college students for themselves. Phase III programmes are produced by community people for themselves. <br>
+      <br>
+      Not only in Tamil and English, VIT CR is producing programmes in Telugu and Hindi. VIT CR is sharing its programmes to other Community Radio Stations through internet and also sharing via EK Duniya Anak Awaz, a programme sharing web platform conceptualized and powered by One World South Asia, and supported by Commonwealth Educational Media Centre for Asia (CEMCA). <br>
+      <br>
+       VIT CR broadcast “BBC Hour”, daily special programmes from 12 noon to 1 pm and 7 pm to 8 pm offered by British Broadcasting Corporation.
+    </div>
+    <div class="row projectsandprogrammes-wrapper">
+      <h5 class="vitblue">On Air Programmes:</h5>
+      <strong>Tamil Programmes</strong>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Ariviyal Aayiram
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This is a informal programme packed with chats and information with an experts.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Anubava Medai
+          </div>
+          <div class="collapsible-body">
+            <p>
+              Every Episode of Anubava Medai will portrait an ordinary men and women life from their perspective. This is an interview based programme.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Dhinam Oru Thiravukool
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This programme will introduce a new way to observe our world from an expert point of view. Dr. Tamilselvan, Mrs. Jagadha Tamilselvan, Mr. Ramasamy are the experts who are all provide various information for the empowerment of the community in daily basis.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Karasaram
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This debate programme is exploring the new wave of thoughts from student community. Each episode will carry an interesting title which will be useful for them and society.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Karuthukalam
+          </div>
+          <div class="collapsible-body">
+            <p>
+              It is Vox Populi from VIT Community Radio. This platform provides an opportunity to the people to expose their ideas and thoughts on many more subjects, issues.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Kathakelu Kathakelu
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This is a story narrating programme for kids.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Kavithai Kelungal
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This art section programme provides a space for the young poem writers in Tamil language. The original poems from the talents decorate this 5 minutes chunk.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Maruthuva Neram
+          </div>
+          <div class="collapsible-body">
+            <p>
+              It is an Interview series which take interviews from Doctors and Consultants of various medical areas.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Pallikodam
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This programme introduces more new voices from the schools of Vellore, particularly, primary school students.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Pudhirodu Vilaiyadu
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This is a game show, which contains more puzzles and riddles for the students to explore Mathematics and brain games.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Sevichelvam
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This Tamil programme attempts to create a full-fledged encyclopedia in audio format.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Thamizhsudar
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This art section programme connects the Tamil Sangam Literature and current social events, issues and lifestyle.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Thiraikadaloodi
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This is a travelogue in VIT Community Radio which covers special locations from different views in Tamil.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Valunar Paarvai
+          </div>
+          <div class="collapsible-body">
+            <p>
+              An Interview series from the experts of various fields. This programme will give more information from the particular field, which will be understood by a common man and woman.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row projectsandprogrammes-wrapper">
+      <h5 class="vitblue">On Air Programmes:</h5>
+      <strong>English Programmes</strong>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>BBC Hour
+          </div>
+          <div class="collapsible-body">
+            <p>
+              VIT Community Radio broadcast BBC Hour contains programmes produced by British Broadcasting Corporation and shared for the empowerment of the community.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Data Chunks
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This English programme attempts to create a full-fledged encyclopedia in audio format.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Exchange of Ideas
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This debate programme is exploring the new wave of thoughts from student community. In each episode students will debate with valuable arguments and justifying approaches which will be interesting towards the end.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Experts Talk
+          </div>
+          <div class="collapsible-body">
+            <p>
+              An Interview series from the experts of various fields. This programme will give more information from the particular field, which will be understood by a common man and woman.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Glossary Box
+          </div>
+          <div class="collapsible-body">
+            <p>
+              It’s the filler which will pick a word and explain its meaning and usage. This will be broadcast often in between programmes..
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Life at a Closer View
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This programme will contain story narration happened in real life from a closer view.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Mix Bag
+          </div>
+          <div class="collapsible-body">
+            <p>
+              Really, it’s a mix bag which will contain everything from astronomy to ant.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>My Bookshop
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This programme will introduce two books every week and review them. This will give an overview of those books to the listeners.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Noble Lectures
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This is a formal lecture programme delivered by the intellectuals from VIT University.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Silver Lining Show
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This is a motivational programme, gives positive view of our life from different perspective.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Shan and Wan
+          </div>
+          <div class="collapsible-body">
+            <p>
+              It is a sport chat, explores the history and current scenarios in various sports.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Travel Bonanza
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This is a travelogue in VIT Community Radio which covers special locations from different views in English.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Way to Success
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This programme explores the uncommon scenes and inspiring stories from the real life heroes..
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>VIT Achievers
+          </div>
+          <div class="collapsible-body">
+            <p>
+              An interview programme series which will expose the achievers from VIT and their struggles towards the success.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row projectsandprogrammes-wrapper">
+      <h5 class="vitblue">Music Programmes:</h5>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Music Programmes
+          </div>
+          <div class="collapsible-body">
+            <p>
+              This category contains songs and compositions produced by the VIT Community Radio - Music Section.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row projectsandprogrammes-wrapper">
+      <h5 class="vitblue">Off Air programmes:</h5>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>VIT Teamspeak
+          </div>
+          <div class="collapsible-body table-content-wrap">
+            <br>
+            <ol>
+              <li><i class="mdi-image-navigate-next"></i>Musical Performance by the Music Section of VIT Teamspeak as the First Curtain Raiser Programme in Gravitas 2013 on 29th September, 2013. </li>
+              <li><i class="mdi-image-navigate-next"></i>Riviera 2014:Riviera Beats, a student team of Anchors, Coordinators, Managers was formed exclusively for Riviera 2014 promotions and Live Programmes in VIT Community Radio. Recorded promotional programme broadcast were done from 20th January, 2014 to 03rd February, 2014. Two days of Training Live broadcast was done with the team from 04th&amp; 5th February, 2014. Riviera Beats Team members and VIT Teamspeak Club members were jointly participated in this Riviera 2014 live broadcast of Four Days (06th – 09th February, 2014, 7 hours per day). Narrowcast of these transmissions were also done in Vellore Campus. </li>
+              <li><i class="mdi-image-navigate-next"></i>Riviera 2015: Riviera Beats, a student team of Anchors, Coordinators, Managers was formed exclusively for Riviera 2015. Live Expos, Live promotional programmes and Live Programmes in VIT Community Radio were done. </li>
+              <li><i class="mdi-image-navigate-next"></i>Promoted Gravitas 2013 with the special test transmission for six days (24th September 2013 to 29th September 2013) including three days of live programmes. Live Outdoor Broadcast Bytes were done from Gravitas events arena across our university.Gravitas 2014 special promotional programmes and live programmes are also done. </li>
+              <li><i class="mdi-image-navigate-next"></i>VIT Teamspeak conducted an audition for its five sections including Tamil, English, Telugu, Hindi and Technical Sections from 05th – 7th March, 2014. </li>
+              <li><i class="mdi-image-navigate-next"></i>VIT CR providing more space for other clubs of VIT including Film Society, E2PC, Dramatics, Tamil Literary Association, Music Club and so on. </li>
+              <li><i class="mdi-image-navigate-next"></i>VIT CR supporting the students who are participating in Short Films competitions by dubbing and song production. </li>
+            </ol>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>Workshops and training
+          </div>
+          <div class="collapsible-body table-content-wrap">
+            <i class="mdi-image-navigate-next"></i><br>
+             &nbsp;&nbsp;Organized the Summer Training Camp 2013 for 20 VIT students and imparted training for their programme production.<br>
+            <i class="mdi-image-navigate-next"></i><br>
+             &nbsp;&nbsp;An Extra Curricular Course for 100 students offered by VIT Community Radio every year. Theory Classes, Training programmes, workshops were conducted to train the students with various skills required for community radio broadcast.<br>
+            <i class="mdi-image-navigate-next"></i><br>
+             &nbsp;&nbsp;As a part of Dream Camp, a nationwide popular activity by Make A Difference Club (MAD), VIT Community Radio arranged a studio visit for 25 school students on 16th March, 2014. Recording, Transmission, Programming processes and technology, equipment usage were explained during this visit.<br>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>School Competitions
+          </div>
+          <div class="collapsible-body table-content-wrap">
+            <br>
+            <i class="mdi-image-navigate-next"></i> &nbsp;&nbsp;Teachers Day &amp; International Literacy Day Competitions for School Students in different categories. Talk, Song, Drama and Quiz competitions both in English and Tamil were conducted on 30th and 31st of August 2014. These competitions were recorded for broadcast on Teachers day 5th September 2014. The rebroadcast was done on 7th September 2014.<br>
+            <i class="mdi-image-navigate-next"></i> &nbsp;&nbsp;In Total, 122 students from 12 schools around Vellore were participated in these competitions. The questions asked in the Quiz competitions were picked from the life and achievements of Dr. Sarvapalli Radhakrishnan and our education system. In the English Quiz, Vidhya Niketan Matriculation Hr. Sec. School won the first place, Vision Vidhyashram won the second place and Ida Scudder School won the third place. In Tamil Quiz, Vedhavalli School, Walaja won the first place, Kings Matriculation Hr. Sec. School won the second place and St. Marks Matriculation Hr. Sec. School won the third place<br>
+          </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col l12 s12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+          <div class="collapsible-header">
+            <i class="mdi-content-add-circle-outline right"></i>College Competetions
+          </div>
+          <div class="collapsible-body">
+            <p>
+              To celebrate VIT CR’s First Anniversary, VIT CR conducted a college level radio competition in December 2014. Students were participated in three different categories such as Radio Jockeying, Original Song, Drama.
+            </p>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col l3 s12 side-link">
+    <div class="col l12 offset-l1">
+      <div class="row">
+        <div class="row">
+          <h4 class=" myblack">Quick Links</h4>
+        </div>
+        <div class="row quick-links-padding-bottom">
+          <a href="/vit/about/community/" class="side-link vitblue">Overview</a>
+        </div>
+        <div class="row quick-links-padding-bottom">
+          <a href="/vit/about/community/" class="side-link vitblue">Programmes</a>
+        </div>
+        <div class="row quick-links-padding-bottom">
+          <a href="/vit/about/community/" class="side-link vitblue">Events</a>
+        </div>
+        <div class="row quick-links-padding-bottom">
+          <a href="/vit/about/community/" class="side-link vitblue">Archives</a>
+        </div>
+        <div class="row quick-links-padding-bottom">
+          <a href="/vit/about/community/" class="side-link vitblue">Videos</a>
+        </div>
+        <div class="row quick-links-padding-bottom">
+          <a href="/vit/about/community/" class="side-link vitblue">Gallery</a>
+        </div>
+      </div>
+      <div class="row">
+        <h4 class=" myblack">Contact Us</h4>
+      </div>
+      <div class="row quick-links-padding-bottom">
+        <div class="extra-lineheight">
+          <strong>VIT Community Radio 90.8 </strong><br>
+           VIT University<br>
+           Vellore - 632014<br>
+           Mobile: 9944441196<br>
+           Intercom: 0416-2204400, 2202881-2<br>
+          <br>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <h4 class=" myblack">News Feeds</h4>
+      </div>
+      <div class="col l9 s12 ">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/news/1.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Team VIMAANAS makes a new plane <i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              <a href="#" class="news-feeds-read-more">Read more</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+            <p>
+               Here is some more information about this product that is only revealed once clicked on.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col l9 s12">
+        <div class="card ">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/news/2.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Chetan Bhagat comes to vit and talks about his book<i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              <a href="#" class="news-feeds-read-more">Read more</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+            <p>
+               Here is some more information about this product that is only revealed once clicked on.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col l9 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/news/3.jpeg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">VIT Riviera at its best<i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              <a href="#" class="news-feeds-read-more">Read more</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+            <p>
+               Here is some more information about this product that is only revealed once clicked on.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col l9 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/news/4.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">VIT Riviera at its best <i class="mdi-navigation-more-vert right"></i></span>
+            <p>
+              <a href="#" class="news-feeds-read-more">Read more</a>
+            </p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title <i class="mdi-navigation-close right"></i></span>
+            <p>
+               Here is some more information about this product that is only revealed once clicked on.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script type="text/javascript">
+       $(document).ready(function(){
+      $('.parallax').parallax();
+    });</script>
+</body>
+</html>

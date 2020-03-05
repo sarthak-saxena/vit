@@ -2,37 +2,24 @@
 <html ng-app="vitApp">
   <head>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     
     <title>VIT University</title>
     <!-- CSS  -->
-    <link href="/vit/css/materialize.css" rel="stylesheet" media="screen,projection"/>
-    <link href="/vit/css/style.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-csp.css">
+    <link href="css/materialize.css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" rel="stylesheet"/>
 
     <!-- SPELLS -->
     <!-- load angular and angular route via CDN -->
-    <script src="/vit/js/angular.js"></script>
-    <script src="/vit/js/angular-route.js"></script>
-    <script src="/vit/js/script.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/script.js"></script>
   </head>
 
   <body ng-controller="mainController">
-    <div id="fb-root"></div>
-    <script>
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-
-
-
-    </script>
-
+        
         <header>
           <nav class="nav-top-fixed" role="navigation">
             <div class="nav-wrapper">
@@ -57,21 +44,20 @@
                       <li><a href="/vit/about">ABOUT</a></li>
                     </ul>
                     <ul class="hide-on-med-and-down center ">
-                      <li><a href="/vit/academics">ACADEMICS</a></li>
+                      <li><a href="academics.html" class='dropdown-button' data-activates='dropdownacademics'>ACADEMICS</a></li>
                     </ul>
                     <ul class="hide-on-med-and-down center ">
-                      <li><a href="/vit/admissions">ADMISSIONS</a></li>
+                      <li><a href="research.html" class='dropdown-button' data-activates='dropdownresearch'>RESEARCH</a></li>
                     </ul>
                     <ul class="hide-on-med-and-down center ">
-                      <li><a href="/vit/research">RESEARCH</a></li>
+                      <li><a href="admissions.html" class='dropdown-button' data-activates='dropdownadmissions'>ADMISSIONS</a></li>
                     </ul>
                     <ul class="hide-on-med-and-down center ">
-                      <li><a href="/vit/placement">PLACEMENTS</a></li>
+                      <li><a href="placements.html" class='dropdown-button' data-activates='dropdownplacements'>PLACEMENTS</a></li>
                     </ul>
-                    <ul class="hide-on-med-and-down center ">
-                      <li><a href="/vit/campus">CAMPUS LIFE</a></li>
-                    </ul>
-                    <!--<ul id='dropdownabout' class='dropdown-content'>
+                    <!--<ul class="hide-on-med-and-down center ">
+                      <li><a href="campus.html" class='dropdown-button' data-activates='dropdowncampuslife'>CAMPUS LIFE</a></li>
+                      <ul id='dropdownabout' class='dropdown-content'>
                         <li><a href="#!">Administrative offices</a></li>
                         <li class="divider"></li>
                         <li><a href="#!">Leadership</a></li>
@@ -190,24 +176,18 @@
             </div>
           </nav>
           <!--End nav bar-->
-        </header>
-        <div class="preloader-content" ng-hide="!layout.loading">
-       
-        <img src="/vit/images/ripple.svg" class="preloader"  />
-        </div>
       
       
 
-      <script src="/vit/js/jquery-2.1.3.min.js"></script>
-      <script src="/vit/js/materialize.js"></script>
-      <script src="/vit/js/init.js"></script>
+      <script src="js/jquery-2.1.3.min.js"></script>
+      <script src="js/materialize.js"></script>
+      <script src="js/init.js"></script>
       <!-- MAIN CONTENT AND INJECTED VIEWS -->
       <div id="main">
-        
 
           <!-- angular templating -->
           <!-- this is where content will be injected -->
-          <div ng-view class="ng-cloak"></div>
+          <div ng-view></div>
 
       </div>
 
@@ -287,7 +267,7 @@
       </footer>
       <!-- END Footer -->
      
-     <script src="/vit/js/route-styles.js"></script>
+     <script src="js/route-styles.js"></script>
 
   </body>
 

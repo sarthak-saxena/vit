@@ -3,6 +3,7 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+ 
 .materialize-red.lighten-5 {
   background-color: #fdeaeb !important; }
 
@@ -2082,7 +2083,7 @@ img.responsive-img, video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 400px; }
+  height: 500px; }
 
 .parallax {
   position: absolute;
@@ -2092,6 +2093,7 @@ img.responsive-img, video.responsive-video {
   bottom: 0;
   z-index: -1; }
   .parallax img {
+    display: none;
     position: absolute;
     left: 50%;
     bottom: 0;
